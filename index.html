@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="welcome">
+    <pre class="top">Simplify your math, 
+    amplify your productivity.</pre>
+    <img src="calci.png" alt="">
+</section>
+<section class="calculator">
+<div class="Screen"><p></p></div>
+<div class="pad">
+<table class="pad_but">
+    <tr>
+        <th><button onclick= "cur = cur +'0'; document.getElementsByClassName('Screen')[0].innerText=cur">0</button></th>
+        <th><button onclick="cur = cur +'1'; document.getElementsByClassName('Screen')[0].innerText=cur" >1</button></th>
+        <th><button onclick="cur = cur +'2'; document.getElementsByClassName('Screen')[0].innerText=cur" >2</button></th>
+    </tr>
+    <tr>
+        <th><button onclick="cur = cur +'3'; document.getElementsByClassName('Screen')[0].innerText=cur" >3</button></th>
+        <th><button onclick="cur = cur +'4'; document.getElementsByClassName('Screen')[0].innerText=cur" >4</button></th>
+        <th><button onclick="cur = cur +'5'; document.getElementsByClassName('Screen')[0].innerText=cur" >5</button></th>
+    </tr>
+    <tr>
+        <th><button onclick="cur = cur +'6'; document.getElementsByClassName('Screen')[0].innerText=cur" >6</button></th>
+        <th><button onclick="cur = cur +'7'; document.getElementsByClassName('Screen')[0].innerText=cur" >7</button></th>
+        <th><button onclick="cur = cur +'8'; document.getElementsByClassName('Screen')[0].innerText=cur" >8</button></th>
+    </tr>
+    <tr>
+        <th><button onclick="cur = cur +'9'; document.getElementsByClassName('Screen')[0].innerText=cur" >9</button></th>
+        <th><button onclick="cur = cur +'+'; document.getElementsByClassName('Screen')[0].innerText=cur" >+</button></th>
+        <th><button onclick="cur = cur +'-'; document.getElementsByClassName('Screen')[0].innerText=cur" >-</button></th>
+    </tr>
+    <tr>
+        <th><button onclick="cur = cur +'X'; document.getElementsByClassName('Screen')[0].innerText=cur" >X</button></th>
+        <th><button onclick="cur = cur +'/'; document.getElementsByClassName('Screen')[0].innerText=cur">/</button></th>
+        <th><button onclick="calc()">=</button></th>
+    </tr>
+</table>
+</div>
+</section>
+<footer></footer>
+<script>
+    var cur = document.getElementsByClassName('Screen')[0].innerText
+    function calc(){
+        var res = eval(cur)
+        document.getElementsByClassName('Screen')[0].innerText= res
+    }
+    window.addEventListener('scroll', () => {
+        if(window.scrollY>400)
+            document.getElementsByClassName('calculator')[0].style.animation="down 1s"
+});
+
+</script>
+</body>
+</html>
