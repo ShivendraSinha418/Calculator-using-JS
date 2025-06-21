@@ -24,7 +24,7 @@ A simple and responsive **calculator** built using **HTML**, **CSS**, and **Vani
 ## 🖼️ Interface Preview
 
 ![Calculator UI](https://github.com/ShivendraSinha418/Calculator-using-JS/blob/main/calci1.png)
-![Calculator UI](https://github.com/ShivendraSinha418/Calculator-using-JS/blob/main/calci1.png)
+![Calculator UI](https://github.com/ShivendraSinha418/Calculator-using-JS/blob/main/calci2.png)
 
 ---
 
